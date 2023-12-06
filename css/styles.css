@@ -75,7 +75,6 @@ img {
    list-style-type: none;
 
    display: flex;
-   margin-left: 76px;
 }
 
 .link-list .link {
@@ -274,7 +273,6 @@ img {
 .team-list-item {
    background-color: #FFFFFF;
 
-   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -334,7 +332,6 @@ img {
 .portfolio-list-item {
    width: calc((100% - 48px) / 3);
    margin-right: 24px;
-   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: flex-start;
