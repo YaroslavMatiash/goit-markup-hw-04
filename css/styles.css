@@ -65,6 +65,12 @@ img {
    align-items: center;
 }
 
+.page-nav .link {
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .page-nav .link:hover,
 .page-nav .link:focus {
    color: #404BBF
@@ -154,6 +160,10 @@ img {
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #434455;
+
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -213,6 +223,10 @@ img {
    height: 56px;
    border: none;
    border-radius: 4px;
+
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-button:hover,
@@ -389,6 +403,31 @@ img {
    flex-wrap: wrap;
 }
 
+.portfolio-overlay-item {
+   position: relative;
+   overflow: hidden;
+}
+
+.portfolio-overlay-item:hover .overlay {
+   transform: translateY(0);
+}
+
+.overlay {
+   background-color: #3f51b5;
+   color: #fff;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transform: translateY(100%);
+   transition: transform 250ms ease-in-out;
+
+   padding-top: 40px;
+   padding-left: 32px;
+   padding-right: 32px;
+}
+
 .portfolio-list-item {
    width: calc((100% - 48px) / 3);
    margin-right: 24px;
@@ -397,6 +436,10 @@ img {
    align-items: flex-start;
    gap: 8px;
    align-self: stretch;
+
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover {
@@ -497,4 +540,13 @@ img {
    height: 40px;
    border-radius: 50%;
    background-color: #4D5AE5;
+
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-links .link:hover,
+.footer-social-links .link:focus {
+   background-color: #31D0AA;
 }
